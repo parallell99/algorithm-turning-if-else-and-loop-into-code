@@ -8,6 +8,19 @@
 */
 
 // Start coding here
+const calculateAverageScore = (scores, classNumber) => {
+  let sumScore = 0;
+  let count= 0
+  
+
+  for (let i = 0; i < scores.length; i++) {
+    if (classNumber === scores[i].classNumber) {
+      sumScore += scores[i].mathScore;
+      count ++
+    }
+  }
+  return sumScore / count;
+};
 
 const scores = [
   { firstname: "Isabel", lastname: "Moore", classNumber: 3, mathScore: 78 },

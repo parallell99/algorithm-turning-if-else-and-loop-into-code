@@ -6,6 +6,21 @@
 */
 
 // Start coding here
+const countNumbers = (numbers) =>{
+    let countPo = 0
+    let countNe = 0
+    let countZe = 0
+    for (let i = 0 ; i < numbers.length ; i++){
+        if(numbers[i] > 0){
+            countPo ++
+        }else if (numbers[i] <0){
+            countNe ++
+        }else{
+            countZe ++
+        }
+    }
+    return {positive: countPo , negative: countNe , zero: countZe}
+}
 
 const numbers1 = [3, -5, 0, 12, -7, 0, 8, 0, 1];
 console.log(countNumbers(numbers1)); // { positive: 4, negative: 2, zero: 3 }
