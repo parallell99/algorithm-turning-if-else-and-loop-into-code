@@ -9,7 +9,7 @@
 // Start coding here
 
 const countDogByBreed = (breedArray) => {
-  let result = 0
+  
   let key = {};
   for (let item of breedArray) {
     if (!key[item]) {
